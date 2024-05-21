@@ -7,5 +7,52 @@
 }
 
 body{
-background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(2, 2, 47);
+}
+
+h1{
+    text-align: center;
+}
+
+.form{
+background-color: rgb(220, 80, 104);
+width: 550px;
+font-size: 20px;
+padding: 20px;
+}
+
+input[type=text], 
+input[type=number], 
+input[type=age], 
+input[type=date]{ 
+    width: 470px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+
+}
+
+Label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.creation{
+    padding: 5px;
+}
+
+input[name=Male-Female]{
+    margin-left: 1rem;
+}
+
+input[name=title] {
+    margin-left: 2.3rem;
+}
+
+input[name=subjects] {
+    margin-left: 0.8rem;
 }
