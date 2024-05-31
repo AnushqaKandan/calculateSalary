@@ -56,3 +56,12 @@ input[name=title] {
 input[name=subjects] {
     margin-left: 0.8rem;
 }
+
+/*javascript*/
+.remove{
+    display: none;
+}
+
+.show{
+    display: block;
+}

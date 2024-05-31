@@ -8,8 +8,9 @@
 </head>
 <body>
     
-    <form class="form">
+    <div class="form">
         <h1>Salary Calculator</h1>
+        <form id="salaryForm">
        <div> 
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname">
@@ -41,7 +42,7 @@
     </Label>
     </div>
     <div class="creation">
-        <Label for = "subjects">Subject:
+        <Label for= "subjects">Subject:
         <input type="checkbox" name="subjects" value="HTML">HTML
         <input type="checkbox" name="subjects" value="JavaScript">JavaScript
         <input type="checkbox" name="subjects" value="Angular">Angular
@@ -50,7 +51,7 @@
     </Label>
     </div>
     <div class="creation">
-        <Label for = "Working">Working:
+        <Label for="Working">Working:
         <input type="radio" name="Working" value="Yes" id="working-no">Yes
         <input type="radio" name="Working" value="No" id="working-yes">No</label>
     </div>
@@ -63,17 +64,16 @@
         <input type="number" id="tax-rate" name="tax-rate">
     </div>
 
-    <div id="result" style="display: none;">
-        <h2>Result</h2>
-        <p id="salary-result"></p>
+    <div id="result">
+        <p id="salary-result"> </p>
     </div>
 </div>
 <div>
-    <button type="submit" onclick="calculateSalary()">Calculate</button>
-    <button type="reset">Clear</button>
+    <button type="button" id="submit" onclick="calculateSalary()">Calculate</button>
+    <button type="reset" id="reset" >Clear</button>
 </div>
-
-      </form>
+</form>
+</div>
 
     <script src="./script/code.js"></script>
 </body>
